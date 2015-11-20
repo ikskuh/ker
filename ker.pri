@@ -1,21 +1,21 @@
 SOURCES += \
-	src/string.cpp
+	$$PWD/src/string.cpp
 
 HEADERS += \
-	include/ker/binaryreader.hpp \
-	include/ker/binarywriter.hpp \
-	include/ker/config.hpp \
-	include/ker/dictionary.hpp \
-	include/ker/fixedstring.hpp \
-	include/ker/new.hpp \
-	include/ker/pair.hpp \
-	include/ker/referencecounted.hpp \
-	include/ker/string.hpp \
-	include/ker/todo.hpp \
-	include/ker/vector.hpp
+	$$PWD/include/ker/binaryreader.hpp \
+	$$PWD/include/ker/binarywriter.hpp \
+	$$PWD/include/ker/config.hpp \
+	$$PWD/include/ker/dictionary.hpp \
+	$$PWD/include/ker/fixedstring.hpp \
+	$$PWD/include/ker/new.hpp \
+	$$PWD/include/ker/pair.hpp \
+	$$PWD/include/ker/referencecounted.hpp \
+	$$PWD/include/ker/string.hpp \
+	$$PWD/include/ker/todo.hpp \
+	$$PWD/include/ker/vector.hpp
 
-INCLUDEPATH += $$quote("include")
-DEPENDPATH += $$quote("include")
+INCLUDEPATH += $$quote("$$PWD/include")
+DEPENDPATH += $$quote("$$PWD/include")
 
 ker_standalone {
 	DEFINES += KER_STANDALONE
